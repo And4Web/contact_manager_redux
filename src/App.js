@@ -15,7 +15,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
+      
         <Router>
           <div className="App">
             <Header branding="Contact Manager" />
@@ -30,7 +30,7 @@ class App extends Component {
             </div>
           </div>
         </Router>
-      </Provider>     
+           
     );
   }
 }
