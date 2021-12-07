@@ -5,9 +5,13 @@ import PropTypes from 'prop-types';
 import {GET_CONTACTS} from '../../actions/types';
 
 class Contacts extends Component {
+
+  componentDidMount(){
+    this.props.getContacts;
+  }
   
   render() {
-    const { contacts } = this.state;
+    const { contacts } = this.props;
     return (
       <React.Fragment>
         <h1 className="display-4 mb-2">
