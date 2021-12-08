@@ -10,7 +10,7 @@ class Contact extends Component {
   };
 
   onDeleteClick = id => {
-    //// DELETE CONTACT ////
+    this.props.deleteContact(id);
   };
 
   render() {
