@@ -35,10 +35,10 @@ const mapStateToProps = (state) => ({
   contacts: state.contact.contacts
 });
 
-// const mapDispatchToProps = (dispatch) => (
-//   {
-//     getContacts: () => (dispatch({type: GET_CONTACTS}))
-//   }
-// )
+/*const mapDispatchToProps = (dispatch) => (
+  {
+    getContacts: () => (dispatch({type: GET_CONTACTS}))
+  }
+)*/
 
 export default connect(mapStateToProps, getContacts)(Contacts);
