@@ -9,7 +9,7 @@ export default function(state = initialState, action){
     case GET_CONTACTS:
       return {
         ...state,
-        contacts: action.payload
+        
       };
 
     case DELETE_CONTACT:
