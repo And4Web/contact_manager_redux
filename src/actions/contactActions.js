@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 export const getContacts = () => async dispatch => {
-  const res = await axios.get('https://jsonplaceholder.typicode.com/users');
+  const res = await axios.get("https://jsonplaceholder.typicode.com/users");
   dispatch({
     type: GET_CONTACTS,
     paylaod: res.data

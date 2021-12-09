@@ -1,6 +1,4 @@
 import {GET_CONTACTS, DELETE_CONTACT, ADD_CONTACT} from '../actions/types';
-import {getContacts, deleteContact, addContact} from '../actions/contactActions';
-
 
 const initialState = {
   contacts: []
