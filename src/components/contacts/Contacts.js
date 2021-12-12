@@ -41,4 +41,5 @@ const mapStateToProps = (state) => ({
   }
 )*/
 
+
 export default connect(mapStateToProps, getContacts)(Contacts);
