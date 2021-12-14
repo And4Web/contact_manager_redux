@@ -13,6 +13,15 @@ class EditContact extends Component {
     errors: {}
   };
 
+  UNSAFE_componentWillReceiveProps(nextProps, nextState){
+    const {name, email, phone} = nextProps.contact;
+    this.setState({
+      name,
+      email,
+      phone
+    })
+  }
+
   componentDidMount(){
     const {id} = this.props.match.params;
     this.props.getContact(id);
